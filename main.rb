@@ -1,10 +1,18 @@
 require 'pp'
 require './players'
-require './math_questions'
 require './matches'
 
-# player1 = Player.new("Dave")
-# puts "#{player1.name} has #{player1.lives} lives left"
+player1 = Player.new("1")
+player2 = Player.new("2")
+match = Match.new(player1, player2)
 
-player2 = Player.new
-puts "#{player2.name} has #{player2.lives} lives left"
+loop do
+    match.ask_question
+    break if player1.out_of_lives? || player2.out_of_lives?
+end
+  
+if player1.out_of_lives?
+    puts "Player 2 wins!"
+else
+    puts "Player 1 wins!"
+end
