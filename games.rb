@@ -41,10 +41,12 @@ class Game
         elsif @players[1].lives == 0
             puts "#{@players[0]} wins!"
         end
+        puts "----- GAME OVER -----"
     end
 
     def match
         loop do
+            puts "----- NEW TURN -----"
             ask_question
             break if @players[0].lives == 0 || @players[1].lives == 0
         end
