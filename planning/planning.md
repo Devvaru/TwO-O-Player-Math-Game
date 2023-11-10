@@ -17,7 +17,7 @@ attributes:
 - lives
 
 methods:
-- calculating lives remaining (state)
+- calculating lives remaining
 
 ### Math questions
 attrtibutes:
@@ -36,7 +36,7 @@ methods:
 - calculate turn
 - output answer input
 - output actual answer
-- output current score (state)
+- output current score
 
 ### Modules
 - Randomizer
