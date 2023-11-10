@@ -14,8 +14,6 @@ Create a 2-Player *math game* where *players* take *turns* to answer simple math
 
 ### Players
 attributes:
-- ids
-- names
 - lives
 
 methods:
@@ -23,7 +21,6 @@ methods:
 
 ### Math questions
 attrtibutes:
-- ids
 - questions
 
 methods:
@@ -33,7 +30,6 @@ methods:
 attributes:
 - turns
 - score
-- player names
 
 methods:
 - compile and display other method results

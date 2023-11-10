@@ -1,25 +1,20 @@
 class Player
-    attr_accessor :lives
+    attr_accessor :lives, :player_number
 
-    def initialize(lives = 3)
+    def initialize(player_number, lives = 3)
+        @player_number = player_number
         @lives = lives
     end
 
     def lose_life
         @lives -= 1
     end
-    
-    def out_of_lives?
-        @lives <= 0
+
+    def current_lives
+       puts "Player#{@player_number} has #{@lives}/3 lives left"
     end
 
     def to_s
-        "Player#{player_number}: #{@lives}/3"
-    end
-
-    private
-
-    def player_number
-        object_id % 2 + 1
-    end
+        "Player#{@player_number}"
+      end
 end
